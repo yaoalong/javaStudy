@@ -14,51 +14,71 @@ import java.util.Properties;
 public class PropertiesTest {
 
     @Test
-    public void testStore(){
-        Properties properties=new Properties();
-        OutputStream outputStream=null;
+    public void testStore() {
+        Properties properties = new Properties();
+        OutputStream outputStream = null;
         try {
 
-            outputStream=new FileOutputStream("config.properties",false);
-            properties.setProperty("name","yeming");
-            properties.setProperty("age","11");
-            properties.store(outputStream,"yeming config properties");
-        }catch (IOException e){
+            outputStream = new FileOutputStream("config.properties", false);
+            properties.setProperty("name", "yeming");
+            properties.setProperty("age", "11");
+            properties.store(outputStream, "yeming config properties");
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
-            if(outputStream!=null){
-                try{
+        } finally {
+            if (outputStream != null) {
+                try {
                     outputStream.close();
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         }
     }
-@Test
-    public void testLoad(){
-    Properties properties=new Properties();
-    InputStream inputStream=null;
-    try {
 
-        inputStream=new FileInputStream("config.properties");
-        properties.load(inputStream);
-        for(Map.Entry<Object,Object> entry:properties.entrySet()){
-            System.out.println("key:"+entry.getKey()+" value:"+entry.getValue());
+    @Test
+    public void testLoad() {
+        Properties properties = System.getProperties();
+        InputStream inputStream = null;
+        try {
 
-        }
-    }catch (IOException e){
-        e.printStackTrace();
-    }
-    finally {
-        if(inputStream!=null){
-            try{
-                inputStream.close();
-            }catch (Exception e){
-                e.printStackTrace();
+            inputStream = new FileInputStream("config.properties");
+            properties.load(inputStream);
+            for (Map.Entry<Object, Object> entry : properties.entrySet()) {
+                System.out.println("key:" + entry.getKey() + " value:" + entry.getValue());
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
+
+    @Test
+    public void testLoadDefaultProperties() {
+        Properties defaultProps = new Properties();
+        FileInputStream in = null;
+        try {
+            in = new FileInputStream("defaultProperties");
+            try {
+                defaultProps.load(in);
+                for (Map.Entry<Object, Object> entry : defaultProps.entrySet()) {
+                    System.out.println("key:" + entry.getKey() + " value:" + entry.getValue());
+
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
 }
