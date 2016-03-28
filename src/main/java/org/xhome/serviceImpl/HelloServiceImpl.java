@@ -1,11 +1,11 @@
 package org.xhome.serviceImpl;
 
-import java.rmi.Naming;
-import java.rmi.registry.LocateRegistry;
-
 import org.junit.Test;
 import org.xhome.rmi.client.impl.HelloImpl;
 import org.xhome.rmi.client.interfaceDO.IHello;
+
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
 
 public class HelloServiceImpl {
 	@Test
