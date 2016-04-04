@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Permain-Class: org.yeming.articles.javaagent.test.TestJavaAgent
-Can-Redefine-Classes: true
-
