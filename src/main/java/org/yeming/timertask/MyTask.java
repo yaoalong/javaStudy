@@ -10,6 +10,20 @@ import java.util.TimerTask;
 public class MyTask extends TimerTask {
     @Override
     public void run() {
-        System.out.println("hahs");
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("execute task!"+this.scheduledExecutionTime());
+    }
+    static class MyTask2 extends  TimerTask{
+
+        @Override
+        public void run() {
+            throw  new RuntimeException();
+        }
     }
 }
+
