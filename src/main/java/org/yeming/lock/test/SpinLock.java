@@ -13,7 +13,7 @@ public class SpinLock {
     private AtomicReference<Thread> sign=new AtomicReference<Thread>();
     public void lock(){
         Thread thread=Thread.currentThread();
-        while(sign.compareAndSet(null,thread)){
+        while(!sign.compareAndSet(null,thread)){
 
         }
     }

@@ -20,6 +20,7 @@ public class MCSLock {
             MCSNode.class, "queue");
 
     public void lock(){
+
         MCSNode mcsNode=new MCSNode();
         NODE.set(mcsNode);
         MCSNode preNode=UPDATER.getAndSet(this,mcsNode);
@@ -34,7 +35,7 @@ public class MCSLock {
         MCSNode mcsNode=NODE.get();
         if(mcsNode.next==null){
             if(UPDATER.compareAndSet(this,mcsNode,null)){
-
+                return;
             }
             else{
                 while(mcsNode.next==null){
@@ -42,11 +43,11 @@ public class MCSLock {
                 }
             }
         }
-        else{
+
 
             mcsNode.next.isLock=false;
+            mcsNode.next=null;
 
-        }
     }
 
 }

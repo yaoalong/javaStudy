@@ -28,9 +28,9 @@ public class CLHLock1 {
         }
     }
     public void unLock(){
-        CLHNode clhNode=local.get();
-        if(updater.getAndSet(this,node,null)){
-            LockSupport.unpark(node.locked);
-        }
+//        CLHNode clhNode=local.get();
+//        if(updater.getAndSet(this,node,null)){
+//            LockSupport.unpark(node.locked);
+//        }
     }
 }
