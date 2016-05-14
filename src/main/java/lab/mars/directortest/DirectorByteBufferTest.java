@@ -13,7 +13,11 @@ import java.util.concurrent.TimeUnit;
 public class DirectorByteBufferTest {
 
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws InterruptedException {
+       new DirectorByteBufferTest().start();
+Thread.sleep(100000);
+    }
+    public void start(){
         ByteBuffer buffer=ByteBuffer.allocateDirect(1024*1024*128);
         try {
             TimeUnit.SECONDS.sleep(10);
