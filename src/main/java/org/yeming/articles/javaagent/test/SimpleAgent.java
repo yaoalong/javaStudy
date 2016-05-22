@@ -18,7 +18,7 @@ public class SimpleAgent {
 
         new SimpleClassTransformer();
 
-        instrumentation.addTransformer(transformer);
+     //   instrumentation.addTransformer(transformer);
 
     }
 

@@ -14,7 +14,7 @@ public class DCTest {
 
     public static void main(String args[]) throws IOException, DCConfig.ConfigException {
         DC dc=new DC();
-        dc.start(new String[]{"zoo1.cfg"});
+       // dc.start(new String[]{"zoo1.cfg"});
 
     }
 }

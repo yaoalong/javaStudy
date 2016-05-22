@@ -13,14 +13,14 @@ import java.io.IOException;
 public class DCTest {
 @Test
     public void test(){
-        DC dc=new DC();
-    try {
-        dc.start(new String[]{"zoo1.cfg"});
-    } catch (DCConfig.ConfigException e) {
-        e.printStackTrace();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
+//        DC dc=new DC();
+//    try {
+//       // dc.start(new String[]{"zoo1.cfg"});
+//    } catch (DCConfig.ConfigException e) {
+//        e.printStackTrace();
+//    } catch (IOException e) {
+//        e.printStackTrace();
+//    }
 
 }
 }

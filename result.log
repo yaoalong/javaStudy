@@ -1,0 +1,107 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xhome.study:Study:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.8.2 vs 4.12 @ line 45, column 21
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: lab.mars:dc-start:jar -> duplicate declaration of version 1.0-SNAPSHOT @ line 92, column 21
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 130, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Study 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Study ---
+[INFO] Deleting E:\project\javaStudy\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Study ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\project\javaStudy\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Study ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 62 source files to E:\project\javaStudy\target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /E:/project/javaStudy/src/main/java/org/yeming/vmtest/HeapOutOfMemoryTest.java:[6,16] sun.misc.Unsafe是内部专用 API, 可能会在未来发行版中删除
+[WARNING] /E:/project/javaStudy/src/main/java/org/yeming/vmtest/HeapOutOfMemoryTest.java:[38,22] sun.misc.Unsafe是内部专用 API, 可能会在未来发行版中删除
+[WARNING] /E:/project/javaStudy/src/main/java/org/yeming/vmtest/HeapOutOfMemoryTest.java:[40,9] sun.misc.Unsafe是内部专用 API, 可能会在未来发行版中删除
+[WARNING] /E:/project/javaStudy/src/main/java/org/yeming/vmtest/HeapOutOfMemoryTest.java:[40,24] sun.misc.Unsafe是内部专用 API, 可能会在未来发行版中删除
+[WARNING] /E:/project/javaStudy/src/main/java/org/yeming/inconsistenttest/Test.java: E:\project\javaStudy\src\main\java\org\yeming\inconsistenttest\Test.java使用或覆盖了已过时的 API。
+[WARNING] /E:/project/javaStudy/src/main/java/org/yeming/inconsistenttest/Test.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[WARNING] /E:/project/javaStudy/src/main/java/org/xhome/annotation/DO/UserDO.java: E:\project\javaStudy\src\main\java\org\xhome\annotation\DO\UserDO.java使用了未经检查或不安全的操作。
+[WARNING] /E:/project/javaStudy/src/main/java/org/xhome/annotation/DO/UserDO.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 8 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[3,38] 程序包jdk.internal.org.objectweb.asm不存在
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[4,43] 程序包jdk.internal.org.objectweb.asm.tree不存在
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[5,43] 程序包jdk.internal.org.objectweb.asm.tree不存在
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[24,9] 找不到符号
+  符号:   类 ClassReader
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[28,31] 找不到符号
+  符号:   类 ClassReader
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[37,9] 找不到符号
+  符号:   类 ClassNode
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[37,35] 找不到符号
+  符号:   类 ClassNode
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[39,39] 找不到符号
+  符号:   变量 ClassReader
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[42,14] 找不到符号
+  符号:   类 MethodNode
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[44,14] 找不到符号
+  符号:   类 MethodNode
+  位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[INFO] 10 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.213 s
+[INFO] Finished at: 2016-05-04T21:32:29+08:00
+[INFO] Final Memory: 21M/252M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Study: Compilation failure: Compilation failure:
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[3,38] 程序包jdk.internal.org.objectweb.asm不存在
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[4,43] 程序包jdk.internal.org.objectweb.asm.tree不存在
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[5,43] 程序包jdk.internal.org.objectweb.asm.tree不存在
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[24,9] 找不到符号
+[ERROR] 符号:   类 ClassReader
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[28,31] 找不到符号
+[ERROR] 符号:   类 ClassReader
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[37,9] 找不到符号
+[ERROR] 符号:   类 ClassNode
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[37,35] 找不到符号
+[ERROR] 符号:   类 ClassNode
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[39,39] 找不到符号
+[ERROR] 符号:   变量 ClassReader
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[42,14] 找不到符号
+[ERROR] 符号:   类 MethodNode
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] /E:/project/javaStudy/src/main/java/org/yeming/articles/javaagent/test/SimpleClassTransformer.java:[44,14] 找不到符号
+[ERROR] 符号:   类 MethodNode
+[ERROR] 位置: 类 org.yeming.articles.javaagent.test.SimpleClassTransformer
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
