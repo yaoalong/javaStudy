@@ -2,6 +2,8 @@ package org.yeming.lamada;
 
 import org.junit.Test;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * Author:yaoalong.
  * Date:2016/4/5.
@@ -10,11 +12,12 @@ import org.junit.Test;
 public class LambdaTest {
     @Test
     public void testMethod() throws InterruptedException {
-        Person person=new Person();
-        person.setName("allen");
-        Runnable runnable=person::getName;
-        new Thread(runnable).start();
-        Thread.sleep(1000);
+        AtomicLong atomicLong=new AtomicLong();
+        new Thread(()->{
+           atomicLong.getAndIncrement();
+        }).start();
+        Thread.sleep(11);
+        System.out.println("result:"+atomicLong.get());
     }
 
 }
