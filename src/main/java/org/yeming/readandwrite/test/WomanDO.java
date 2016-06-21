@@ -1,7 +1,5 @@
 package org.yeming.readandwrite.test;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * Author:yaoalong.
  * Date:2016/4/8.

@@ -1,11 +1,11 @@
 package org.xhome.rmi.client.Service.impl;
 
-import java.rmi.Naming;
-
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xhome.rmi.client.interfaceDO.IHello;
+
+import java.rmi.Naming;
 
 
 public class RMIClient {

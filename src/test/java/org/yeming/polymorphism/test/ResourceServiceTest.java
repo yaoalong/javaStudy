@@ -5,8 +5,6 @@ import org.junit.Test;
 
 import java.util.HashMap;
 
-import static org.junit.Assert.*;
-
 /**
  * Author:yaoalong.
  * Date:2016/3/30.

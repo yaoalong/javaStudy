@@ -1,6 +1,5 @@
 package org.yeming.onem2m.test;
 
-import lab.mars.dc.DC;
 import lab.mars.dc.collaboration.RegisterAndMonitorService;
 
 /**

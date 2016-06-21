@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.yeming.DO.PersonDO;
 
 import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 

@@ -1,7 +1,5 @@
 package org.yeming.serializetest;
 
-import redis.clients.util.IOUtils;
-
 import java.io.*;
 
 /**

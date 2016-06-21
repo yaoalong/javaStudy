@@ -1,9 +1,4 @@
-import lab.mars.dc.DC;
-import lab.mars.dc.DCConfig;
-import lab.mars.dc.DCPacket;
 import org.junit.Test;
-
-import java.io.IOException;
 
 /**
  * Author:yaoalong.

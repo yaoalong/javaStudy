@@ -1,10 +1,10 @@
 package org.xhome.rmi.client.impl;
 
+import org.xhome.rmi.client.interfaceDO.IHello;
+
 import java.io.Serializable;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-
-import org.xhome.rmi.client.interfaceDO.IHello;
 
 public class HelloImpl extends UnicastRemoteObject implements IHello, Serializable{
 

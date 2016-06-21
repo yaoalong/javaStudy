@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: lab.mars.nettytest.NettyTest
+Built-By: Administrator
+Created-By: Apache Maven 3.2.5
+Build-Jdk: 1.8.0_45

@@ -1,7 +1,6 @@
 package org.yeming.lock.test;
 
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicReferenceArray;
 
 /**
  * Author:yaoalong.
